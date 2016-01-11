@@ -1,0 +1,29 @@
+<FrameLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout
+        android:id="@+id/fragment_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/fragment"
+            android:name="com.udacity.gradle.builditbigger.MainActivityFragment"
+            tools:layout="@layout/fragment_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+
+
+    <ProgressBar
+        android:id="@+id/waiting_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        />
+</FrameLayout>
+
